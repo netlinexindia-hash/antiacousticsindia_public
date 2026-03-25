@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audiometric Booths — Products | Anti Acoustics India</title>
+  <meta name="description" content="Explore Anti Acoustics India's range of OSHA-compliant audiometric booths. Standard 4×4×7 ft and Deluxe 5×5×7 ft models. Custom sizes available." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .product-detail {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--gray-mid);
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      margin-bottom: 48px;
+    }
+    .product-detail.reverse { direction: rtl; }
+    .product-detail.reverse > * { direction: ltr; }
+    .product-detail-img {
+      height: 480px;
+      overflow: hidden;
+      background: var(--navy-light);
+    }
+    .product-detail-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .product-detail:hover .product-detail-img img { transform: scale(1.04); }
+    .product-detail-body {
+      padding: 48px 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .product-detail-body .badge {
+      display: inline-block;
+      background: var(--teal-glow);
+      color: var(--teal);
+      border: 1px solid rgba(0,180,216,0.25);
+      border-radius: 50px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 5px 14px;
+      margin-bottom: 16px;
+    }
+    .product-detail-body h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .product-detail-body .dim {
+      font-size: 0.85rem;
+      color: var(--teal);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 18px;
+    }
+    .product-detail-body p {
+      font-size: 0.9rem;
+      color: var(--gray-text);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+    .detail-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .detail-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.83rem;
+      color: var(--text-dark);
+    }
+    .detail-feature i { color: var(--teal); margin-top: 2px; }
+    .detail-price-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+      border-top: 1px solid var(--gray-mid);
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .detail-price-main {
+      font-family: var(--font-head);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--navy);
+    }
+    .detail-price-note { font-size: 0.78rem; color: var(--gray-text); }
+
+    .custom-section {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      border-radius: var(--radius-lg);
+      padding: 60px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .custom-section::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(0,180,216,0.15) 0%, transparent 70%);
+    }
+    .custom-section h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .custom-section p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.65);
+      max-width: 540px;
+      margin: 0 auto 28px;
+      line-height: 1.7;
+    }
+    @media (max-width: 768px) {
+      .product-detail { grid-template-columns: 1fr; direction: ltr; }
+      .product-detail.reverse { direction: ltr; }
+      .product-detail-img { height: 260px; }
+      .product-detail-body { padding: 28px 24px; }
+      .detail-features { grid-template-columns: 1fr; }
+      .custom-section { padding: 40px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar solid" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" style="flex-direction: row; align-items: center; gap: 14px;">
+        <img src="images/Asset%201@3x.png" alt="Logo" style="height: 44px; width: auto;" />
+        <div style="display: flex; flex-direction: column; justify-content: center; gap: 4px;">
+          <span class="nav-logo-name">Anti Acoustics India Pvt Ltd</span>
+          <span class="nav-logo-tagline">Sound Solution, Silent Excellence</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="specifications.html">Specifications</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa fa-chevron-right"></i>
+      <span>Products</span>
+    </div>
+    <h1 class="page-hero-title">Audiometric Booths</h1>
+    <p class="page-hero-sub">OSHA-compliant sound isolation booths — engineered for precision hearing testing.</p>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="section">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:52px;">
+      <span class="section-label">Our Range</span>
+      <h2 class="section-title">Choose Your Booth</h2>
+      <div class="teal-line"></div>
+      <p class="section-sub">All booths deliver &lt;40 dB(A) inside from a 60–65 dB(A) ambient environment, fully OSHA compliant.</p>
+    </div>
+
+    <!-- Product 1 -->
+    <div class="product-detail fade-up">
+      <div class="product-detail-img">
+        <img src="images/booth-standard.png" alt="Standard Audiometric Booth 4x4x7 ft" />
+      </div>
+      <div class="product-detail-body">
+        <span class="badge">⭐ Standard Model</span>
+        <h2>Standard Audiometric Booth</h2>
+        <div class="dim">4 ft × 4 ft × 7 ft (L×B×H) — Outer Dimensions</div>
+        <p>Our Standard Audiometric Booth is designed for ENT clinics, occupational health centers, and hearing assessment facilities. Compact yet highly effective, it delivers superior noise isolation to meet OSHA hearing conservation standards.</p>
+        <div class="detail-features">
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>100mm modular panel walls</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>CRCA steel construction</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>EPDM sealed acoustic door</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>24mm DGU vision window</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>Silent forced ventilation</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>Jack panel (8–10 ports)</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>Internal LED ceiling light</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>Enamel exterior finish</div>
+        </div>
+        <div class="detail-price-row">
+          <div>
+            <div class="detail-price-main">₹1,20,000</div>
+            <div class="detail-price-note">+ GST @ 18% &nbsp;|&nbsp; Ex-Works, Noida</div>
+          </div>
+          <a href="contact.html" class="btn btn-primary"><i class="fa fa-envelope"></i> Get Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-detail reverse fade-up">
+      <div class="product-detail-img">
+        <img src="images/booth-standard.png" alt="Deluxe Audiometric Booth 5x5x7 ft" />
+      </div>
+      <div class="product-detail-body">
+        <span class="badge" style="background:rgba(124,58,237,0.12);color:#7C3AED;border-color:rgba(124,58,237,0.25);">🏆 Deluxe Model</span>
+        <h2>Deluxe Audiometric Booth</h2>
+        <div class="dim">5 ft × 5 ft × 7 ft (L×B×H) — Outer Dimensions</div>
+        <p>Our Deluxe Audiometric Booth offers a larger testing area, providing enhanced comfort for extended hearing assessments. Ideal for hospitals, ENT departments, and occupational health departments requiring more working space inside the booth.</p>
+        <div class="detail-features">
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>100mm modular panel walls</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>CRCA steel construction</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>EPDM sealed acoustic door</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>24mm DGU vision window</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>Silent forced ventilation</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>Jack panel (8–10 ports)</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>Internal LED ceiling light</div>
+          <div class="detail-feature"><i class="fa fa-check-circle"></i>Larger interior for comfort</div>
+        </div>
+        <div class="detail-price-row">
+          <div>
+            <div class="detail-price-main">₹1,30,000</div>
+            <div class="detail-price-note">+ GST @ 18% &nbsp;|&nbsp; Ex-Works, Noida</div>
+          </div>
+          <a href="contact.html" class="btn btn-primary"><i class="fa fa-envelope"></i> Get Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom -->
+    <div class="custom-section fade-up">
+      <h2>Need a Custom Size?</h2>
+      <p>We design and fabricate bespoke audiometric booths to your exact specifications — any size, any configuration. Contact us with your requirements.</p>
+      <a href="contact.html" class="btn btn-primary" style="font-size:1rem;padding:16px 36px;">
+        <i class="fa fa-ruler-combined"></i> Request Custom Quote
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- OTHER SOLUTIONS -->
+<section class="section bg-light">
+  <div class="container text-center">
+    <span class="section-label">More Solutions</span>
+    <h2 class="section-title">Complete Acoustic Engineering</h2>
+    <div class="teal-line"></div>
+    <p class="section-sub">Beyond our flagship audiometric booths, we design and manufacture a full spectrum of industrial and architectural acoustic solutions.</p>
+    
+    <div class="products-grid">
+      <!-- Card 1 -->
+      <div class="product-card fade-up">
+        <div class="product-img-wrap">
+          <img src="images/product_image/Audiology%20Booth.jpeg" alt="Audiology Booth" />
+        </div>
+        <div class="product-body" style="text-align:left;">
+          <h3>Clinical Audiology Booths</h3>
+          <p style="font-size: 0.9rem; color: var(--gray-text); line-height: 1.6; margin-top: 8px;">Professional-grade audiology booths designed for hearing tests in clinics and hospitals, ensuring precise diagnostics with maximum noise isolation.</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="product-card fade-up">
+        <div class="product-img-wrap">
+          <img src="images/product_image/Acoustic%20Enclosure.jpeg" alt="Industrial Acoustic Enclosure" />
+        </div>
+        <div class="product-body" style="text-align:left;">
+          <h3>Industrial Acoustic Enclosures</h3>
+          <p style="font-size: 0.9rem; color: var(--gray-text); line-height: 1.6; margin-top: 8px;">Customized heavy-duty enclosures to reduce machinery and manufacturing noise, ensuring a safer, OSHA-compliant workspace for operators.</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="product-card fade-up">
+        <div class="product-img-wrap">
+          <img src="images/product_image/DG%20Room%20Treatment.jpeg" alt="DG Room Treatment" />
+        </div>
+        <div class="product-body" style="text-align:left;">
+          <h3>DG Room Acoustic Treatment</h3>
+          <p style="font-size: 0.9rem; color: var(--gray-text); line-height: 1.6; margin-top: 8px;">High-performance acoustic insulation for Diesel Generator (DG) rooms, engineered to meet strict environmental noise regulations.</p>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="product-card fade-up">
+        <div class="product-img-wrap">
+          <img src="images/product_image/Operator%20Cabin.jpg" alt="Operator Cabin" />
+        </div>
+        <div class="product-body" style="text-align:left;">
+          <h3>Soundproof Operator Cabins</h3>
+          <p style="font-size: 0.9rem; color: var(--gray-text); line-height: 1.6; margin-top: 8px;">Modular soundproof control cabins designed for loud factory floors, providing a quiet, air-conditioned environment for personnel.</p>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="product-card fade-up">
+        <div class="product-img-wrap">
+          <img src="images/product_image/Room%20Acoustic%20Treatment.JPG" alt="Room Acoustic Treatment" />
+        </div>
+        <div class="product-body" style="text-align:left;">
+          <h3>Architectural Room Acoustics</h3>
+          <p style="font-size: 0.9rem; color: var(--gray-text); line-height: 1.6; margin-top: 8px;">Comprehensive acoustic paneling and sound treatments for auditoriums, studios, and conference rooms to eliminate echoes.</p>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="product-card fade-up">
+        <div class="product-img-wrap">
+          <img src="images/product_image/Blower%20Enclosure.jpg" alt="Blower Enclosure" />
+        </div>
+        <div class="product-body" style="text-align:left;">
+          <h3>Blower & Compressor Enclosures</h3>
+          <p style="font-size: 0.9rem; color: var(--gray-text); line-height: 1.6; margin-top: 8px;">Specialized noise reduction canopies for heavy industrial blowers and compressors, maintaining optimal equipment airflow.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip">
+  <div class="container">
+    <div class="cta-strip-inner">
+      <div>
+        <h2>Have Questions About Our Products?</h2>
+        <p>Our acoustic specialists are here to help you choose the right booth.</p>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;">
+        <a href="tel:+919643427078" class="btn"><i class="fa fa-phone"></i> +91-9643427078</a>
+        <a href="specifications.html" class="btn" style="background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.4);">View Specifications</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-name">Anti Acoustics India Pvt Ltd</div>
+        <div class="brand-tag">Sound Solution, Silent Excellence</div>
+        <p>Specialist manufacturer of audiometric booths and tailor-made acoustic insulation solutions. Serving industrial, clinical, and architectural sectors across India.</p>
+        <div class="footer-cert"><i class="fa fa-certificate"></i> ISO 9001:2015 Certified</div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html"><i class="fa fa-chevron-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa fa-chevron-right"></i> About Us</a></li>
+          <li><a href="products.html"><i class="fa fa-chevron-right"></i> Products</a></li>
+          <li><a href="specifications.html"><i class="fa fa-chevron-right"></i> Specifications</a></li>
+          <li><a href="pricing.html"><i class="fa fa-chevron-right"></i> Pricing</a></li>
+          <li><a href="contact.html"><i class="fa fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html"><i class="fa fa-chevron-right"></i> Standard Booth (4×4×7)</a></li>
+          <li><a href="products.html"><i class="fa fa-chevron-right"></i> Deluxe Booth (5×5×7)</a></li>
+          <li><a href="contact.html"><i class="fa fa-chevron-right"></i> Custom Booth</a></li>
+          <li><a href="specifications.html"><i class="fa fa-chevron-right"></i> Technical Specs</a></li>
+          <li><a href="pricing.html"><i class="fa fa-chevron-right"></i> Pricing & Terms</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i class="fa fa-location-dot"></i><span>C-20, Sector-7, Noida, Uttar Pradesh — 201301</span></li>
+          <li><i class="fa fa-phone"></i><a href="tel:+919643427078">+91-9643427078</a></li>
+          <li><i class="fa fa-envelope"></i><a href="mailto:anil14@antiacousticsindia.com">anil14@antiacousticsindia.com</a></li>
+          <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/919643427078">WhatsApp Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Anti Acoustics India. All rights reserved.</span>
+      <span>Designed with <i class="fa fa-heart" style="color:var(--teal)"></i> in India</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
